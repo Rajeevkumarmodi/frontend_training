@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="name">
+        <h3>Rajeev Kumar</h3>
+      </div>
+      <ul id="links" class="navLinks">
+        <p class="closeIcon">X</p>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skill">Skill</a></li>
+        <li><a href="#project">Project</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <i class="fa-solid fa-bars"></i>
+    </nav>
+
+    <!-- main -->
+
+    <main id="home" class="main">
+      <!-- left -->
+      <div class="leftMain">
+        <h2 class="heading">
+          I'm a <span>Full Stack</span> <br />
+          Developer
+        </h2>
+        <ul class="socialLinks">
+          <li>
+            <a href=""><i class="fa-brands fa-github"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+          </li>
+        </ul>
+
+        <button class="cv">
+          <a href="./assets/resume.pdf" download="Rajeev cv ">Download CV</a>
+        </button>
+      </div>
+      <!-- right -->
+      <div class="mainImg">
+        <img src="./assets/main_img.jpeg" alt="" />
+      </div>
+    </main>
+
+    <!-- about -->
+
+    <section id="about" class="about">
+      <div class="aboutHading">
+        <h3>About</h3>
+      </div>
+      <div class="aboutContent">
+        <img class="aboutImg" src="./assets/about_img.png" alt="about image" />
+        <div class="aboutContentInner">
+          <p class="introName">I' am Rajeev Kumar</p>
+          <p class="intro">
+            i am MERN stack developer proficient in MongoDB, Express.js, React,
+            and Node.js. Expertise in building dynamic and scalable web
+            applications. Strong foundation in front-end and back-end
+            technologies, with a focus on creating seamless user experiences.
+            Proven track record in developing robust and efficient full-stack
+            solutions. Passionate about staying updated on the latest
+            technologies to enhance development processes.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- skill -->
+
+    <section id="skill">
+      <h2>Skill</h2>
+
+      <div class="icons">
+        <img src="./assets/c_icon.png" alt="c icon" />
+        <img src="./assets/c++_icon.png" alt="c++ icon" />
+        <img src="./assets/node_icon.png" alt="icon" />
+        <img src="./assets/mongodb_icon.png" alt="icon" />
+        <img src="./assets/express_icon.png" alt="icon" />
+      </div>
+    </section>
+
+    <!-- projects -->
+
+    <section id="project">
+      <h2>Projects</h2>
+      <div class="allProjects">
+        <div class="project">
+          <img
+            class="projectImge"
+            src="./assets/project_1.jpg"
+            alt="project 1"
+          />
+          <div class="projectContent">
+            <p class="projectHading">React js Ecommerc app</p>
+            <p class="content">
+              Built using React.js, my e-commerce app seamlessly integrates
+              essential functionalities. Users can easily sign up, log in, and
+              navigate a user-friendly interface. The intuitive cart system
+              allows effortless addition of products, while a secure ordering
+              process ensures a smooth checkout experience.
+            </p>
+          </div>
+        </div>
+        <div class="project">
+          <img
+            class="projectImge"
+            src="./assets/project_2.avif"
+            alt="project 1"
+          />
+          <div class="projectContent">
+            <p class="projectHading">MERN Stack Blog Web App</p>
+            <p class="content">
+              This project seamlessly integrates MongoDB for flexible and
+              organised data storage, Express.js for efficient server-side
+              handling, React for a dynamic and intuitive user interface, and
+              Node.js for a robust backend. The incorporation of authentication
+              mechanisms and RESTful APIs ensure a secure and seamless
+              experience for users.
+            </p>
+          </div>
+        </div>
+        <div class="project">
+          <img
+            class="projectImge"
+            src="./assets/project_3.jpg"
+            alt="project 1"
+          />
+          <div class="projectContent">
+            <p class="projectHading">MERN Stack Notes Web App</p>
+            <p class="content">
+              Node js , Express js , MongoDB , Tailwind CSS Designed and
+              developed a responsive web application using MERN stack.Features
+              :- User signup , user login , user create note, user edit note,
+              user delete note
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact -->
+
+    <section id="contact">
+      <div class="contactHading">
+        <h2>Contact</h2>
+      </div>
+      <div class="contactBox">
+        <div>
+          <img
+            class="contactImg"
+            src="./assets/./contact_image.png"
+            alt=" contact image"
+          />
+        </div>
+        <form class="contactInputBox">
+          <div class="inputBox">
+            <label for="name">Name</label>
+            <input type="text" id="name" required />
+          </div>
+          <div class="inputBox">
+            <label for="email">Email</label>
+            <input type="email" id="email" required />
+          </div>
+          <div class="inputBox">
+            <label for="message">Message</label>
+            <textarea name="" id="message" rows="5" required></textarea>
+            <!-- <input type="text" id="message" /> -->
+          </div>
+          <div>
+            <button class="formSubmit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <script src="./script.js" />
+  </body>
+</html>

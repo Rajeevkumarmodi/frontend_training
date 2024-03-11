@@ -1,0 +1,440 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1F242D;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* nav bar */
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    padding-inline: 50px;
+}
+
+.nav .fa-bars {
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.name {
+    color: white;
+
+}
+
+.navLinks {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.navLinks .closeIcon {
+    display: none;
+}
+
+.navLinks li a {
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+/* main */
+
+.main {
+    padding-inline: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.heading {
+    font-size: 50px;
+    color: white;
+}
+
+.heading span {
+    color: blue;
+}
+
+.dev {
+    color: rgb(59, 59, 241);
+    font-weight: 600;
+}
+
+.socialLinks {
+    margin-top: 20px;
+}
+
+.socialLinks li {
+    display: flex;
+    gap: 20px;
+}
+
+.socialLinks li a {
+    font-size: 30px;
+    color: white;
+}
+
+.cv {
+    margin-top: 20px;
+    padding: 8px 15px;
+    border: none;
+    background-color: blue;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cv a {
+    color: white;
+}
+
+
+#home .mainImg {
+    height: 500px;
+    margin-top: 40px;
+}
+
+#home .mainImg img {
+    height: 100%;
+    background-color: blue;
+    border-radius: 20px;
+    box-shadow: 2px 3px 5px 5px rgb(167, 165, 165);
+}
+
+
+/* about */
+
+.about {
+    margin-top: 70px;
+    padding-inline: 80px;
+}
+
+.aboutHading {
+    text-align: center;
+    color: white;
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+.aboutContent {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.aboutContentInner {
+    color: white;
+}
+
+.introName {
+    font-weight: bold;
+    padding-block: 6px;
+    font-size: 20px;
+}
+
+.intro {
+    color: rgb(219, 217, 217);
+}
+
+.aboutImg {
+    width: 200px;
+    background-color: black;
+    /* border-radius: 50%; */
+    clip-path: circle();
+}
+
+
+/* skill */
+
+
+#skill {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#skill h2 {
+    color: white;
+    font-size: 25px;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+#skill .icons {
+    flex-wrap: wrap;
+    display: flex;
+    gap: 25px;
+}
+
+#project {
+    margin-block: 50px;
+    text-align: center;
+}
+
+#project h2 {
+    margin-block: 20px;
+    text-decoration: underline;
+    color: white;
+}
+
+#project .allProjects {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.project {
+    height: 300px;
+    width: 250px;
+    overflow: hidden;
+    box-shadow: 0 0 4px 2px rgb(215, 215, 215);
+    border-radius: 20px;
+    padding: 5px;
+}
+
+#project .projectImge {
+    width: 100%;
+    height: 90%;
+    border-radius: 20px;
+    cursor: pointer;
+    object-fit: fill;
+}
+
+.projectContent {
+    text-align: center;
+    position: relative;
+}
+
+.project .projectHading {
+    color: white;
+    font-weight: 700;
+}
+
+.content {
+    background-color: rgb(38, 37, 37);
+    position: absolute;
+    bottom: -300px;
+    color: white;
+    transition: all ease-in-out 0.7s;
+}
+
+.project:hover .content {
+    bottom: 0;
+    transition: all ease-in-out 0.7s;
+}
+
+
+
+/* contact */
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 80px;
+    margin-block: 50px;
+}
+
+
+#contact h2 {
+    margin-block: 20px;
+    text-decoration: underline;
+    color: white;
+}
+
+.contactBox {
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 2px 1px rgb(209, 207, 207);
+    border-radius: 30px;
+    padding-inline: 20px;
+}
+
+.contactBox .contactImg {
+    width: 60%;
+}
+
+
+.contactInputBox {
+    width: 100%;
+}
+
+.contactInputBox .inputBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-top: 10px;
+}
+
+.contactInputBox .inputBox input {
+    padding: 8px;
+    font-size: 15px;
+}
+
+.contactInputBox .inputBox textarea {
+    padding: 8px;
+    font-size: 15px;
+    outline: none;
+}
+
+.contactInputBox .inputBox input:focus {
+    outline: none;
+}
+
+.contactInputBox .inputBox textarea:focus {
+    padding: 10px;
+    outline: none;
+}
+
+.contactInputBox .inputBox label {
+    color: white;
+}
+
+.formSubmit {
+    background-color: blue;
+    color: white;
+    width: 100%;
+    margin-top: 15px;
+    border: none;
+    padding-block: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+
+
+/* responsive */
+
+@media screen and (max-width:768px) {
+
+    .nav .fa-bars {
+        color: white;
+        font-size: 30px;
+        cursor: pointer;
+        display: block;
+    }
+
+    nav {
+        position: relative;
+    }
+
+    .navLinks {
+        /* display: none; */
+    }
+
+
+    /* main */
+
+    .main {
+        padding-inline: 20px;
+        height: 70vh;
+    }
+
+    #home .mainImg img {
+        display: none;
+    }
+
+    .about {
+        margin-top: 70px;
+        padding-inline: 20px;
+    }
+
+    .aboutContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .contactBox .contactImg {
+        display: none;
+    }
+
+    #contact {
+        padding-inline: 20px;
+        margin-block: 50px;
+    }
+
+    #contact .contactInputBox {
+        width: 70vw;
+        padding: 20px 10px;
+    }
+
+    nav .closeIcon {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        color: white;
+        font-size: 25px;
+        display: block;
+    }
+
+
+    nav .closeIcon:hover {
+        color: red;
+        cursor: pointer;
+    }
+
+    nav .navLinks {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #414244;
+        width: 250px;
+        position: absolute;
+        top: 0;
+        height: 100vh;
+        right: -260px;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .active {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 40px;
+        align-items: center;
+        background-color: #414244;
+        width: 250px;
+        position: absolute;
+        top: 0;
+        height: 100vh;
+        right: 0;
+        transition: all 0.5s ease-in-out;
+        position: fixed;
+        z-index: 20;
+    }
+
+    .active li a {
+        color: white;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+}
