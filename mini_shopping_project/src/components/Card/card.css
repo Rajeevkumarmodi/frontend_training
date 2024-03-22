@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.productCard {
+    width: 250px;
+    height: 300px;
+    padding: 5px;
+    box-shadow: 0 0 4px 3px rgb(224, 221, 221);
+    border-radius: 10px;
+}
+
+.image img {
+    width: 100%;
+    border-radius: 10px;
+    height: 180px;
+}
+
+.productCard .details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.productCard .rating {
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.detailBtn {
+    padding: 5px 10px;
+    background-color: green;
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn {
+    text-align: center;
+}
+
+.btn button {
+    padding: 6px 10px;
+    border: none;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+}

@@ -1,0 +1,11 @@
+.homePage {
+    padding-inline: 50px;
+    margin-block: 50px;
+}
+
+.homePage .allProduct {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
