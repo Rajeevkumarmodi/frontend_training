@@ -1,0 +1,25 @@
+.cartPage {
+    margin-inline: 50px;
+}
+
+.cart {
+    margin-block: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.cart img {
+    width: 100px;
+
+}
+
+.cart p {
+    font-weight: bold;
+}
+
+.cart .deleteBtn {
+    color: red;
+    cursor: pointer;
+    font-size: 25px;
+}
